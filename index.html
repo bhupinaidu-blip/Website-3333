@@ -1,0 +1,182 @@
+<!doctype html>
+<!-- INFO1005 Assessment 3: resume and portfolio website. Built on the Maggie Simpson template. -->
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume and portfolio of Bhupen Naidu, ICT student building skills in networking and cybersecurity.">
+  <meta name="author" content="Bhupen Naidu">
+  <title>Bhupen Naidu | ICT Student and Aspiring Cybersecurity Professional</title>
+
+  <!-- Favicon set (in /favicon), linked on every page -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+
+  <!-- Google Fonts: Space Grotesk (headings) and Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons and Bootstrap 5.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS comes last so it can style Bootstrap components -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Navigation: fixed top menu with dark mode switch -->
+<nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-shield-lock-fill" aria-hidden="true"></i> Bhupen Naidu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li><li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+      <div class="form-check form-switch theme-switch ms-lg-3">
+        <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" aria-label="Toggle dark mode">
+        <label class="form-check-label" for="themeSwitch">Dark</label>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<!-- HERO: role line, calls to action and quick facts -->
+<header class="hero-band">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-lg-7">
+        <p class="eyebrow">Cybersecurity &middot; networking &middot; web</p>
+        <h1>Bhupen Naidu</h1>
+        <p class="lead-copy">ICT student building skills in networking and cybersecurity. I am looking for an entry-level cybersecurity or IT role in Sydney.</p>
+        <p class="d-none d-md-block hero-extra">I work as a trainee network systems engineer and study at Western Sydney University.</p>
+        <div class="hero-actions">
+          <a class="btn btn-brand" href="portfolio.html">View portfolio</a>
+          <a class="btn btn-ghost" href="pdf/bhupen-naidu-resume.pdf" download><i class="bi bi-download" aria-hidden="true"></i> Download resume</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <aside class="snapshot" aria-labelledby="glance">
+          <h2 id="glance">At a glance</h2>
+          <ul class="list-unstyled mb-0">
+            <li><i class="bi bi-mortarboard-fill" aria-hidden="true"></i> Diploma in ICT, Western Sydney University</li>
+            <li><i class="bi bi-hdd-network-fill" aria-hidden="true"></i> Trainee Network Systems Engineer</li>
+            <li><i class="bi bi-shield-lock-fill" aria-hidden="true"></i> Focus: network security</li>
+            <li><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Western Sydney, NSW</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- FEATURED CASE STUDIES -->
+<section class="container section-block" aria-labelledby="featured">
+  <div class="section-intro">
+    <p class="eyebrow">Featured work</p>
+    <h2 id="featured">Case studies</h2>
+    <p>Projects from my studies that show how I work. Open one for the problem, my role, tools and result.</p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="images/database-design.jpg" class="card-img-top" width="666" height="554" alt="Database Design and Management graphic of a person carrying a folder between database tables">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Database design</h3>
+            <p class="card-text">A data model and security review for an online grocery delivery service.</p>
+            <div class="card-actions mt-auto">
+              <button type="button" class="btn btn-brand open-lightbox" data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                data-project-src="images/database-design.jpg" data-project-alt="Database Design and Management graphic of a person carrying a folder between database tables" data-project-title="FreshCart: database design and data security" data-project-pdf="pdf/freshcart-database-case-study.pdf"
+                data-project-problem="FreshCart needed a clear data structure for customers, orders, supermarkets and drivers, and a plan to protect the sensitive data it holds." data-project-role="I designed the ERD, turned it into a relational model in third normal form and reviewed the security risks." data-project-tools="draw.io, relational modelling and the Australian Privacy Principles." data-project-result="An ERD with 11 entities, a relational model with keys and business rules, and a table of sensitive data with protections such as multi-factor authentication and access logging.">View case study</button>
+              <a class="btn btn-outline-brand" href="pdf/freshcart-database-case-study.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Open PDF<span class="visually-hidden"> (Database design)</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="images/java.jpg" class="card-img-top" width="1000" height="486" alt="Java logo">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Java program</h3>
+            <p class="card-text">A program that prices book orders and applies quantity discounts.</p>
+            <div class="card-actions mt-auto">
+              <button type="button" class="btn btn-brand open-lightbox" data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                data-project-src="images/java.jpg" data-project-alt="Java logo" data-project-title="Java bookstore order program" data-project-pdf="pdf/java-bookstore-case-study.pdf"
+                data-project-problem="A bookstore needed to price orders with quantity discounts and stop invalid quantities." data-project-role="I wrote the algorithm, test cases and Java code, then ran valid and invalid inputs." data-project-tools="Java and the Scanner class." data-project-result="The program accepts only quantities from 1 to 10 and applies discounts from 0% to 15%. An order of 10 books earns 15% off.">View case study</button>
+              <a class="btn btn-outline-brand" href="pdf/java-bookstore-case-study.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Open PDF<span class="visually-hidden"> (Java program)</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card h-100 portfolio-card">
+          <img src="images/ai-vs-real.jpg" class="card-img-top" width="514" height="778" alt="AI ad versus real ad graphic with two men">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">Real vs AI advert</h3>
+            <p class="card-text">Testing whether classmates could tell a real Coca-Cola ad from an AI copy.</p>
+            <div class="card-actions mt-auto">
+              <button type="button" class="btn btn-brand open-lightbox" data-bs-toggle="modal" data-bs-target="#projectLightbox"
+                data-project-src="images/ai-vs-real.jpg" data-project-alt="AI ad versus real ad graphic with two men" data-project-title="Real vs AI advertisement campaign" data-project-pdf="pdf/ai-advert-case-study.pdf"
+                data-project-problem="AI image tools now make convincing adverts, so I tested how easily people can spot a fake." data-project-role="I analysed a real print ad, recreated it with AI, ran a class vote and wrote a case study on AI in business, creative industries and ICT." data-project-tools="ChatGPT, Adobe Firefly and Adobe Express." data-project-result="8 of 10 classmates picked the real ad. A misspelled word in the AI version gave it away, which shows why human checking still matters.">View case study</button>
+              <a class="btn btn-outline-brand" href="pdf/ai-advert-case-study.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Open PDF<span class="visually-hidden"> (Real vs AI advert)</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+  </div>
+  <p class="mt-4"><a href="portfolio.html">See the full portfolio</a></p>
+</section>
+
+<!-- LIGHTBOX: one reusable Bootstrap modal for all case studies -->
+<div class="modal fade" id="projectLightbox" tabindex="-1" aria-labelledby="projectLightboxLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+    <div class="modal-content project-modal">
+      <div class="modal-header">
+        <h2 class="modal-title fs-4" id="projectLightboxLabel">Project title</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/database-design.jpg" class="img-fluid modal-project-img" id="modalProjectImage" width="666" height="554" alt="Selected case study">
+        <dl class="case-details">
+          <dt>Problem</dt><dd id="modalProblem"></dd>
+          <dt>My role</dt><dd id="modalRole"></dd>
+          <dt>Tools</dt><dd id="modalTools"></dd>
+          <dt>Result</dt><dd id="modalResult"></dd>
+        </dl>
+        <a id="modalPdf" class="btn btn-brand" href="#" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Open full case study (PDF)</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS STRIP -->
+<section class="skills-strip" aria-labelledby="skillshead">
+  <div class="container">
+    <h2 id="skillshead" class="h3">Skills and certifications</h2>
+    <ul class="chip-list list-unstyled mb-0">
+      <li>Network configuration</li><li>Network monitoring</li><li>Cybersecurity fundamentals</li><li>Hardware and software installation</li><li>Troubleshooting</li><li>Java basics</li><li>Database design</li><li>Cisco CCNA (in progress)</li><li>Certificate III in IT (in progress)</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<!-- Footer: social icons and contact links on every page -->
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+    <p class="mb-0">&copy; 2026 Bhupen Naidu. Western Sydney University.</p>
+    <p class="social-links mb-0">
+      <a href="https://www.linkedin.com/in/bhupen-naidu" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:bhupinaidu@gmail.com" aria-label="Email Bhupen"><i class="bi bi-envelope-fill"></i></a>
+      <a href="tel:+61491114279" aria-label="Call Bhupen"><i class="bi bi-telephone-fill"></i></a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
